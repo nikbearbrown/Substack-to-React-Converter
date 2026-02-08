@@ -7,7 +7,6 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import Link from "next/link";
 import SecondaryButton from "@/components/ui/secondary-button";
 
-// MDX components for styling
 const mdxComponents = {
   h1: (props: any) => <h1 className="text-4xl font-bold mb-6 mt-8" {...props} />,
   h2: (props: any) => <h2 className="text-3xl font-bold mb-4 mt-8" {...props} />,
@@ -118,7 +117,6 @@ export default function SubstackArticlePage({
   return (
     <div className="container px-4 md:px-6 mx-auto py-12">
       <div className="max-w-4xl mx-auto">
-        {/* Back to Archive Link */}
         <Link 
           href="/substack" 
           className="inline-flex items-center text-sm text-muted-foreground hover:text-primary mb-8"
@@ -139,7 +137,6 @@ export default function SubstackArticlePage({
           Back to Articles
         </Link>
 
-        {/* Original Substack Link Banner */}
         {frontmatter.substackUrl && (
           <div className="mb-8 p-4 bg-muted/50 rounded-lg border border-border">
             <div className="flex items-center justify-between flex-wrap gap-4">
@@ -152,7 +149,7 @@ export default function SubstackArticlePage({
                 </span>
               </div>
               
-                href={frontmatter.substackUrl}
+                <a href={frontmatter.substackUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-primary hover:underline inline-flex items-center gap-1"
@@ -166,7 +163,6 @@ export default function SubstackArticlePage({
           </div>
         )}
 
-        {/* Article Header */}
         <header className="mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             {frontmatter.title}
@@ -185,15 +181,12 @@ export default function SubstackArticlePage({
           </div>
         </header>
 
-        {/* Article Content */}
         <article className="prose prose-lg dark:prose-invert max-w-none">
           <MDXRemote source={content} components={mdxComponents} />
         </article>
 
-        {/* Divider */}
         <hr className="my-12 border-muted" />
 
-        {/* Author Section */}
         <section className="my-12">
           <div className="flex flex-col sm:flex-row gap-4 flex-wrap mb-8">
             <SecondaryButton href="/substack">

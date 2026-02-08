@@ -48,7 +48,6 @@ export default function SubstackArchivePage() {
   return (
     <div className="container px-4 md:px-6 mx-auto py-12">
       <div className="max-w-4xl mx-auto">
-        {/* Header */}
         <div className="mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Substack Articles
@@ -59,7 +58,6 @@ export default function SubstackArchivePage() {
           </p>
         </div>
 
-        {/* Articles Grid */}
         {articles.length === 0 ? (
           <div className="text-center py-12">
             <p className="text-muted-foreground text-lg">
@@ -112,7 +110,6 @@ export default function SubstackArchivePage() {
           </div>
         )}
 
-        {/* Resources Section */}
         {articles.length > 0 && (
           <section className="mt-16">
             <h2 className="text-3xl font-bold mb-6">More from Nik Bear Brown</h2>
@@ -134,7 +131,7 @@ export default function SubstackArchivePage() {
               </h3>
               <div className="flex flex-wrap justify-center gap-4 mt-4">
                 
-                  href="https://twitter.com/nikbearbrown"
+                 <a href="https://twitter.com/nikbearbrown"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-primary hover:underline"
@@ -142,7 +139,7 @@ export default function SubstackArchivePage() {
                   Twitter
                 </a>
                 
-                  href="https://www.youtube.com/@nikbearbrown"
+                 <a href="https://www.youtube.com/@nikbearbrown"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-primary hover:underline"
@@ -150,7 +147,7 @@ export default function SubstackArchivePage() {
                   YouTube
                 </a>
                 
-                  href="https://www.nikbearbrown.com/"
+                 <a href="https://www.nikbearbrown.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-primary hover:underline"
@@ -158,7 +155,7 @@ export default function SubstackArchivePage() {
                   Website
                 </a>
                 
-                  href="https://www.linkedin.com/in/nikbearbrown/"
+                  <a href="https://www.linkedin.com/in/nikbearbrown/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-primary hover:underline"
