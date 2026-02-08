@@ -1,0 +1,26 @@
+{
+  "articles": [
+    {
+      "title": "Why You Should Own Your Content (Even If You Stay on Substack)",
+      "subtitle": "The case for making your articles discoverable on your own domain",
+      "slug": "why-own-your-content",
+      "date": "2025-02-08",
+      "displayDate": "February 8, 2025",
+      "excerpt": "Google can't find your Substack. Social media thinks your links are spam. But you don't have to leave Substack to fix this—just make your content visible on your own site too.",
+      "substackUrl": "https://substack.com/@nikbearbrown",
+      "filename": "why-own-your-content.mdx"
+    },
+    {
+      "title": "The Future of AI in Education",
+      "subtitle": "How machine learning is transforming the classroom experience",
+      "slug": "ai-education-future",
+      "date": "2025-01-15",
+      "displayDate": "January 15, 2025",
+      "excerpt": "Artificial intelligence is rapidly changing how we approach education. From personalized learning paths to intelligent tutoring systems, AI is reshaping what's possible in the classroom.",
+      "substackUrl": "https://substack.com/@nikbearbrown",
+      "filename": "ai-education-future.mdx"
+    }
+  ],
+  "totalCount": 2,
+  "lastUpdated": "2026-02-08T12:00:00.000Z"
+}
