@@ -1,4 +1,6 @@
-# 🚀 Substack Integration for Next.js
+
+# Substack to React Converter
+## 🚀 Substack Integration for Next.js
 
 **Make your Substack articles discoverable without leaving Substack.**
 
